@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\EngineUnreal.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{D81E36F4-9EDE-40F1-A013-BFBC2272CCD3}</UniqueIdentifier>
+      <UniqueIdentifier>{937F43BE-206C-4580-BBB4-8D7BB1CB424F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\EngineUnreal.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,9 @@
     <None Include="..\..\Source\EngineUnrealEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.editorconfig" />
     <Filter Include="Config">
-      <UniqueIdentifier>{72D0659B-FE99-4F83-95C5-35FF0938C69C}</UniqueIdentifier>
+      <UniqueIdentifier>{BC51983C-E279-4809-B935-D47E56C8C52B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,8 +24,11 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\EngineUnreal">
-      <UniqueIdentifier>{E01A7D7B-5ED1-4DE3-A94F-7921E239BA8E}</UniqueIdentifier>
+      <UniqueIdentifier>{EC883E9F-4DFB-424C-A255-9053BE7B2C85}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\EngineUnreal\EngineUnreal.Build.cs">
       <Filter>Source\EngineUnreal</Filter>
@@ -36,14 +40,32 @@
       <Filter>Source\EngineUnreal</Filter>
     </ClInclude>
     <Filter Include="Source\EngineUnreal\Private">
-      <UniqueIdentifier>{4A40FC6D-F9A2-473A-94D5-FB9423159685}</UniqueIdentifier>
+      <UniqueIdentifier>{A2CC79D8-FAA0-4118-9CC3-61244FCAE016}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\EngineUnreal\Private\CodeCharacter.cpp">
+      <Filter>Source\EngineUnreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\EngineUnreal\Private\CodedPawn.cpp">
+      <Filter>Source\EngineUnreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\EngineUnreal\Private\ProgCharacter.cpp">
+      <Filter>Source\EngineUnreal\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\EngineUnreal\Private\TestCharacter.cpp">
       <Filter>Source\EngineUnreal\Private</Filter>
     </ClCompile>
     <Filter Include="Source\EngineUnreal\Public">
-      <UniqueIdentifier>{A701FEA0-1BC1-4C8C-95D6-ACC660FE7F89}</UniqueIdentifier>
+      <UniqueIdentifier>{5F20AE14-55A7-4045-BAD4-A3CAD6E76C8F}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\EngineUnreal\Public\CodeCharacter.h">
+      <Filter>Source\EngineUnreal\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\EngineUnreal\Public\CodedPawn.h">
+      <Filter>Source\EngineUnreal\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\EngineUnreal\Public\ProgCharacter.h">
+      <Filter>Source\EngineUnreal\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\EngineUnreal\Public\TestCharacter.h">
       <Filter>Source\EngineUnreal\Public</Filter>
     </ClInclude>
