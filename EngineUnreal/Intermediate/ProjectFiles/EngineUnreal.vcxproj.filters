@@ -42,31 +42,13 @@
     <Filter Include="Source\EngineUnreal\Private">
       <UniqueIdentifier>{A2CC79D8-FAA0-4118-9CC3-61244FCAE016}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\EngineUnreal\Private\CodeCharacter.cpp">
-      <Filter>Source\EngineUnreal\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\EngineUnreal\Private\CodedPawn.cpp">
-      <Filter>Source\EngineUnreal\Private</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\EngineUnreal\Private\ProgCharacter.cpp">
-      <Filter>Source\EngineUnreal\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\EngineUnreal\Private\TestCharacter.cpp">
       <Filter>Source\EngineUnreal\Private</Filter>
     </ClCompile>
     <Filter Include="Source\EngineUnreal\Public">
       <UniqueIdentifier>{5F20AE14-55A7-4045-BAD4-A3CAD6E76C8F}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Source\EngineUnreal\Public\CodeCharacter.h">
-      <Filter>Source\EngineUnreal\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\EngineUnreal\Public\CodedPawn.h">
-      <Filter>Source\EngineUnreal\Public</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\EngineUnreal\Public\ProgCharacter.h">
-      <Filter>Source\EngineUnreal\Public</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\EngineUnreal\Public\TestCharacter.h">
       <Filter>Source\EngineUnreal\Public</Filter>
     </ClInclude>
   </ItemGroup>
