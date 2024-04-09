@@ -15,6 +15,10 @@ public:
 	// Sets default values for this character's properties
 	AProgCharacter();
 
+	
+	float WalkSpeed = 500.0f;
+	float RunSpeed = 1000.0f;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -56,9 +60,23 @@ public:
 	UFUNCTION()
 	void StopSprint();
 
-	float Speed = 2.0f;
-	float WalkSpeed = 2.0f;
-	float RunSpeed = 666.0f;
+	UFUNCTION()
+	void StartCrouch();
+
+	UFUNCTION()
+	void StopCrouch();
+
+	
+	float Speed = WalkSpeed;
 
 	bool IsSprinting = false;
+
+	FVector MoveDir;
+
+	bool IsCroucing = false;
+
+	// I hate this and myself
+
+	float X;
+	float Y;
 };

@@ -29,13 +29,32 @@ void AProgCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	if (IsSprinting) {
-		//GetCharacterMovement().walk
+		Speed = RunSpeed;
 	}
 	else {
 		Speed = WalkSpeed;
 	}
-	FString FloatToString = FString::SanitizeFloat(Speed);
-	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, *FloatToString);
+
+
+	FVector location = GetActorLocation();
+
+	// thanks unity. <3
+	MoveDir = GetActorForwardVector() * X + GetActorRightVector() * Y;
+
+	MoveDir.Normalize();
+
+	location += MoveDir * Speed * DeltaTime;
+
+	SetActorLocation(location);
+
+	if (IsCroucing) {
+		Crouch();
+	}
+
+	// debug code.
+	/*FString FloatToString = FString::SanitizeFloat(Speed);
+
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, *FloatToString);*/
 }
 
 // Called to bind functionality to input
@@ -65,8 +84,11 @@ void AProgCharacter::Vertical(float Value)
 {
 	// Find out which way is "forward" and record that the player wants to move that way.
 	//FVector Direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::X);
-	FVector Direction = GetActorForwardVector();
-	AddMovementInput(Direction, Value * Speed);
+
+	//FVector Direction = GetActorForwardVector();
+	//AddMovementInput(Direction, Value);
+
+	X = Value;
 }
 
 void AProgCharacter::Horizontal(float Value)
@@ -74,8 +96,10 @@ void AProgCharacter::Horizontal(float Value)
 	// Find out which way is "right" and record that the player wants to move that way.
 	//FVector Direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::Y);
 
-	FVector Direction = GetActorRightVector();
-	AddMovementInput(Direction, Value * Speed);
+	//FVector Direction = GetActorRightVector();
+	//AddMovementInput(Direction, Value);
+	
+	Y = Value;
 }
 
 void AProgCharacter::LookVertical(float Value)
@@ -107,5 +131,13 @@ void AProgCharacter::StopSprint()
 {
 	IsSprinting = false;
 	
+}
+
+void AProgCharacter::StartCrouch() {
+	IsCroucing = true;
+}
+
+void AProgCharacter::StopCrouch() {
+	IsCroucing = false;
 }
 
