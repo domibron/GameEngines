@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "EngineUnreal",
+			"Path": "C:\\Users\\dommc\\Desktop\\Repos\\GitKraken\\GameEngines\\EngineUnreal\\Source\\EngineUnreal.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "EngineUnrealEditor",
+			"Path": "C:\\Users\\dommc\\Desktop\\Repos\\GitKraken\\GameEngines\\EngineUnreal\\Source\\EngineUnrealEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

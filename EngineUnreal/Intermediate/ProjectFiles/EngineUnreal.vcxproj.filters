@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\EngineUnreal.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{937F43BE-206C-4580-BBB4-8D7BB1CB424F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\EngineUnreal.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\EngineUnrealEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.editorconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{BC51983C-E279-4809-B935-D47E56C8C52B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\EngineUnreal">
+      <UniqueIdentifier>{EC883E9F-4DFB-424C-A255-9053BE7B2C85}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\EngineUnreal\EngineUnreal.Build.cs">
+      <Filter>Source\EngineUnreal</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\EngineUnreal\EngineUnreal.cpp">
+      <Filter>Source\EngineUnreal</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\EngineUnreal\EngineUnreal.h">
+      <Filter>Source\EngineUnreal</Filter>
+    </ClInclude>
+    <Filter Include="Source\EngineUnreal\Private">
+      <UniqueIdentifier>{A2CC79D8-FAA0-4118-9CC3-61244FCAE016}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\EngineUnreal\Private\ProgCharacter.cpp">
+      <Filter>Source\EngineUnreal\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\EngineUnreal\Public">
+      <UniqueIdentifier>{5F20AE14-55A7-4045-BAD4-A3CAD6E76C8F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\EngineUnreal\Public\ProgCharacter.h">
+      <Filter>Source\EngineUnreal\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
