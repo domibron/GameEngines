@@ -18,7 +18,7 @@ public class ExitDoor : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (CoinManager.Current.CoinCount >= CoinManager.Current.CoinAmmount && !Confetti.isPlaying)
+		if (CoinManager.Current.CoinCount >= CoinManager.Current.CoinTotal && !Confetti.isPlaying)
 		{
 			Confetti.Play();
 		}
@@ -26,7 +26,7 @@ public class ExitDoor : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.tag == "Player" && CoinManager.Current.CoinCount >= CoinManager.Current.CoinAmmount)
+		if (other.tag == "Player" && CoinManager.Current.CoinCount >= CoinManager.Current.CoinTotal)
 		{
 			SceneManager.LoadScene(LevelBuildIndex);
 		}

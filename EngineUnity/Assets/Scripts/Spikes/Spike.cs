@@ -5,26 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Spike : MonoBehaviour
 {
-	// Start is called before the first frame update
-	void Start()
-	{
-
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-
-	}
-
-	void OnCollisionEnter(Collision other)
-	{
-		if (other.collider.CompareTag("Player"))
-		{
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-		}
-	}
-
+	// when the player touches the spike then reload the current scene.
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.transform.tag == "Player")

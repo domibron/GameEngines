@@ -15,17 +15,13 @@ public class MainMenu : MonoBehaviour
 		Cursor.visible = true;
 	}
 
-	// Update is called once per frame
-	void Update()
-	{
-
-	}
-
+	// load the level with the given build index.
 	public void LoadLevel(int levelBuildIndexID)
 	{
 		SceneManager.LoadScene(levelBuildIndexID);
 	}
 
+	// quit the game.
 	public void Quit()
 	{
 		Application.Quit();
