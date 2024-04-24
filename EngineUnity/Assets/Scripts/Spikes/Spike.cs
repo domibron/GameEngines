@@ -19,7 +19,15 @@ public class Spike : MonoBehaviour
 
 	void OnCollisionEnter(Collision other)
 	{
-		if (other.gameObject.CompareTag("Player"))
+		if (other.collider.CompareTag("Player"))
+		{
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.transform.tag == "Player")
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}

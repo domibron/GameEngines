@@ -10,7 +10,9 @@ public class MainMenu : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-
+		// makes the cursor visible and usable for the main menu.
+		Cursor.lockState = CursorLockMode.None;
+		Cursor.visible = true;
 	}
 
 	// Update is called once per frame

@@ -65,7 +65,9 @@ public class PlayerMovement : MonoBehaviour
 
 	void HandleGroundCheck()
 	{
-		IsGrounded = Physics.Raycast(transform.position, Vector3.down, 1.1f);
+		Vector3 bottomOfPlayer = new Vector3(transform.position.x, transform.position.y - cc.height / 2, transform.position.z);
+
+		IsGrounded = Physics.Raycast(transform.position, Vector3.down, 1.1f) || Physics.CheckSphere(bottomOfPlayer, cc.radius * 0.9f, ~(1 << 3));
 	}
 
 	void HandleGravity()
