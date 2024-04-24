@@ -203,7 +203,8 @@
 		{
 			"ShaderMapHash": "6CB5CAC2EF8223107EA2B21906291F541215A3CF",
 			"Assets": [
-				"/Engine/VREditor/TransformGizmo/Xray"
+				"/Engine/VREditor/TransformGizmo/Xray",
+				"/Game/Materials/Spike_Red"
 			]
 		},
 		{
@@ -288,6 +289,31 @@
 			"ShaderMapHash": "8D5C9971654E22D92212E61C55D92EEA6D6F673A",
 			"Assets": [
 				"/Engine/BasicShapes/BasicShapeMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "03AA0268DB35C2466FDA4AF069E0C5D5D663D5C0",
+			"Assets": [
+				"/Paper2D/TranslucentUnlitSpriteMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "429016B473D65FDF9DBEAA7F37C31E7A23523036",
+			"Assets": [
+				"/Game/Sprites/Particle"
+			]
+		},
+		{
+			"ShaderMapHash": "DABF6BF8BB8214AF83DEAF60B6660B90DFCB5CBF",
+			"Assets": [
+				"/Game/Materials/Coin_Yellow",
+				"/Game/Materials/Door_Brown"
+			]
+		},
+		{
+			"ShaderMapHash": "506958DF3F9AA1EA8287B0E233C2B60FD1249831",
+			"Assets": [
+				"/Game/Sprites/circleparticle"
 			]
 		}
 	]
