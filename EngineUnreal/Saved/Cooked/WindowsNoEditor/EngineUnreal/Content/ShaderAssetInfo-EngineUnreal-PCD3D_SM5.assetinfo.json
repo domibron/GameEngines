@@ -292,6 +292,19 @@
 			]
 		},
 		{
+			"ShaderMapHash": "506958DF3F9AA1EA8287B0E233C2B60FD1249831",
+			"Assets": [
+				"/Game/Sprites/circleparticle"
+			]
+		},
+		{
+			"ShaderMapHash": "DABF6BF8BB8214AF83DEAF60B6660B90DFCB5CBF",
+			"Assets": [
+				"/Game/Materials/Door_Brown",
+				"/Game/Materials/Coin_Yellow"
+			]
+		},
+		{
 			"ShaderMapHash": "03AA0268DB35C2466FDA4AF069E0C5D5D663D5C0",
 			"Assets": [
 				"/Paper2D/TranslucentUnlitSpriteMaterial"
@@ -301,19 +314,6 @@
 			"ShaderMapHash": "429016B473D65FDF9DBEAA7F37C31E7A23523036",
 			"Assets": [
 				"/Game/Sprites/Particle"
-			]
-		},
-		{
-			"ShaderMapHash": "DABF6BF8BB8214AF83DEAF60B6660B90DFCB5CBF",
-			"Assets": [
-				"/Game/Materials/Coin_Yellow",
-				"/Game/Materials/Door_Brown"
-			]
-		},
-		{
-			"ShaderMapHash": "506958DF3F9AA1EA8287B0E233C2B60FD1249831",
-			"Assets": [
-				"/Game/Sprites/circleparticle"
 			]
 		}
 	]
